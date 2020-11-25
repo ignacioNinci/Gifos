@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/e2153d89f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Proyecto GIFOS</title>
+  </head>
+  <body>
+    <header id="headerDark">
+      <div class="border-violet" id="border-violet"></div>
+      <img class="logo" id="logo" src="/assets/logo-mobile.svg" alt="logo" />
+      <i class="fas fa-bars" id="btn-menu"></i>
+      <i class="fas fa-times" id="btn-close"></i>
+      <nav id="opc-menu" class="disabled-menu opc-menu">
+        <ul id="lista" class="lista">
+          <li id="dark-night" class="li-modo-nocturno"><a class="a-modo-nocturno" href="#">Modo Nocturno</a></li>
+          <li class="white-line"></li>
+          <li id="li-favoritos" class="li-favoritos"><a class="a-favoritos" href="#">Favoritos</a></li>
+          <li class="white-line2"></li>
+          <li id="li-mis-gifos" class="li-mis-gifos"><a class="a-mis-gifos" href="#">Mis GIFOS</a></li>
+        </ul>
+        <div class="img-conteiner-crearGifos" id="img-conteiner-crearGifos">
+          <img id="img-button-crear-gifo" src="/assets/button-crear-gifo.svg" alt="botonCrearGifo">
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="title-section" id="title-section">
+        <div class="title-conteiner" id="title-conteiner">
+          <h1 class="title" id="title">
+            Inspírate, busca, guarda, y crea los mejores
+            <span class="gifo">GIFOS</span>
+          </h1>
+        </div>
+      </section>
+
+      <!-- SECCION DE BUSQUEDA -->
+
+      <section class="search-section" id="search-section">
+        <div class="search-conteiner" id="search-conteiner">
+          <img
+            class="image-search"
+            id="image-search"
+            src="assets/ilustra_header.svg"
+            alt="imagenBusqueda"
+          />
+          <div id="box-search">
+            <form id="search-form">
+              <input
+                type="text"
+                placeholder="Busca GIFOS y más"
+                id="search-input"
+              />
+              <span id="search-icon-conteiner">
+                <i id="search-icon" class="fas fa-search"></i>
+                <i class="fas fa-times" id="search-icon-close"></i>
+              </span>
+              <div class="conteiner-sugerencias" id="conteiner-sugerencias"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCION DEL TITLO TRENDING INMEDIATAMENTE DESPUES DE LA SECCION DE BUSQUEDA -->
+
+      <section class="trending-section" id="trending-section">
+        <h2 class="trending-title" id="trending-title">Trending:</h2>
+        <div class="paragraph-conteiner" id="paragraph-conteiner">
+          <p id="paragraph-1">
+            Reactions, Entertainment, Sports, Stickers, Artists
+          </p>
+        </div>
+        <div class="center-border" id="center-border"></div>
+      </section>
+
+     
+
+      <!-- SECCION DE RESULTADO DE LA BUSQUEDA -->
+
+      <section id="busqueda" class="busqueda">
+        <div class="title-busqueda-conteiner">
+          <h2 class="title-busqueda" id="title-busqueda"></h2>
+        </div>
+        <div class="conteiner-btn-ver-mas-busqueda" id="conteiner-btn-ver-mas-busqueda">
+          VER MÁS
+        </div>
+      </section>
+
+      <!-- SECCION DE FAVORITOS -->
+      <section id="favoritos" class="disabled-favoritos">
+        <div class="conteiner-title-favoritos" id="conteiner-title-favoritos">
+          <img class="favoritos-icon" src="assets/icon-favoritos.svg" alt="iconoFavoritos" />
+          <h2 class="title-favoritos">Favoritos</h2>
+        </div>
+        <div class="conteiner-btn-ver-mas-favoritos" id="conteiner-btn-ver-mas-favoritos">VER MÁS</div>
+      </section>
+
+      <!-- SECCION DE MIS GIFOS -->
+      <section id="mis-gifos" class="mis-gifos-section disabled-mis-gifos">
+        <img class="mis-gifos-icon" src="/assets/icon-mis-gifos.svg" alt="iconoMisGifos" />
+        <div class="conteiner-title-mis-gifos">
+          <h2 class="title-mis-gifos">Mis GIFOS</h2>
+        </div>
+        <div class="conteiner-mis-gifos" id="conteiner-mis-gifos"></div>
+        <div class="btn-ver-mas-mis-gifos" id="btn-ver-mas-mis-gifos">VER MÁS</div>
+      </section>
+
+      <!--GRABACION DE GIFS-->
+
+      <section id="grabargif" class="grabargif">
+        <div id="camara-completa" class="camara-completa">
+          <img src="/assets/camara.svg" alt="Camara" id="camara"/>
+          <img src="/assets/element-luz-camara.svg" alt="Luz camara" class="luz-camara" />
+        </div>
+        <div id="zonaGrabacion" class="zonaGrabacion">
+          <div id="grabacion" class="grabacion">
+            <div id="sup-izq"></div>
+            <div id="sup-der"></div>
+            <div id="centrograbacion">
+              <p id="instructivo">Aquí podrás<br />crear tus propios <span id="gifos-celeste">GIFOS</span></p>
+              <p id="detalle">¡Crea tu GIFO en sólo 3 pasos!<br />(sólo necesitas una cámara para grabar un video)</p>
+            </div>
+            <div id="inf-izq"></div>
+            <div id="inf-der"></div>
+          </div>
+          <div id="pasos">
+            <h5 id="paso1" class="pasos">1</h5>
+            <h5 id="paso2" class="pasos">2</h5>
+            <h5 id="paso3" class="pasos">3</h5>
+          </div>
+        </div>
+        <div class="pelicula">
+          <img src="/assets/pelicula.svg" id="pelicula" alt="Pelicula" />
+        </div>
+        <div id="foot" class="foot">
+        <div id="division" class="division"></div>
+        <h4 id="comenzar" class="comenzar">COMENZAR</h4>
+      </div>
+      </section>
+
+      <!--SECCION DE GIFOS TRENDING-->
+
+      <section class="gifos-section" id="gifos-section">
+        <div class="gifos-conteiner">
+          <h2 class="gifos-title" id="gifos-title">Trending GIFOS</h2>
+        </div>
+        <div class="paragraph-conteiner2">
+          <p class="paragraph2" id="paragraph2">
+            Mira los últimos <br />
+            GIFOS de nuestra comunidad.
+          </p>
+        </div>
+          <div
+            class="gifos-section-conteiner"
+            id="gifos-section-conteiner"
+          ></div>
+          <div class="flechas" id="flechas">
+            <div id="flecha-izquierda-conteiner" class="flecha-izquierda-conteiner">
+              <img class="flecha-izquierda" id="flecha-izquierda" src="/assets/button-slider-left.svg" alt="flechaIzquierda">
+              <img id="hover-izq" class="hover-izq" src="/assets/button-slider-left-hover.svg" alt="hoverIzquierda">
+            </div>
+            <div id="flecha-derecha-conteiner" class="flecha-derecha-conteiner">
+              <img class="flecha-derecha" id="flecha-derecha" src="/assets/Button-Slider-right.svg" alt="flechaDerecha">
+              <img id="hover-der" class="hover-der" src="/assets/Button-Slider-right-hover.svg" alt="hoverDerecha">
+            </div>
+          </div>
+      </section>
+
+    </main>
+
+    <footer id="footer">
+      <section class="redes-section" id="redes-section">
+        <div class="title3-conteiner">
+          <h3 id="title3" class="title3">Compartir en:</h3>
+        </div>
+        <div class="redes">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="copyright-conteiner">
+          <p id="copyright">© GIFOS 2020 All Rights Reserved.</p>
+        </div>
+      </section>
+    </footer>
+
+
+    <script src="/JS/funcionalidad.js"></script>
+    <script src="/JS/mis-Gifos.js"></script>
+    <script src="/JS/favoritos.js"></script>
+    <script src="/JS/GifosMax.js"></script>
+  </body>
+</html>

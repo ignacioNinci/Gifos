@@ -1,0 +1,916 @@
+// MEDIAQUERIES
+
+@media screen and (min-width: 600px) {
+    header {
+      width: 100%;
+      height: 5.9%;
+      background: rgba(255, 255, 255, 0.5);
+      .logo {
+        width: 59.1px;
+        height: 59.1px;
+        margin-left: -2.1%;
+      }
+      #btn-menu {
+        display: none !important;
+      }
+      .opc-menu {
+        display: block;
+        background: none;
+        height: 0px;
+        ul {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: right;
+          float: right;
+          margin-top: -35px;
+          margin-right: 187.5px;
+          .li-modo-nocturno,
+          .li-favoritos,
+          .li-mis-gifos {
+            font-size: 13px;
+            text-align: right;
+            color: #572ee5;
+            & :hover {
+              border-bottom: 2px solid #5ed7c6;
+            }
+            .a-modo-nocturno,
+            .a-favoritos,
+            .a-mis-gifos {
+              color: #572ee5;
+              font-size: 13px;
+              letter-spacing: 0;
+              text-align: center;
+              padding: 0px;
+              body.dark & {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+        .white-line,
+        .white-line2 {
+          display: none;
+        }
+      }
+  
+      .img-conteiner-crearGifos {
+        width: 54px;
+        height: 54px;
+        border: 1px solid #572ee5;
+        border-radius: 50%;
+        float: right;
+        position: relative;
+        top: -34px;
+        left: 400px;
+        cursor: pointer;
+        img {
+          margin-top: 18px;
+        }
+      }
+    }
+  
+    //  MAIN //////////////////////////////////////////////
+  
+    .title-section {
+      body.dark & {
+        background: #37383c;
+      }
+      .title-conteiner {
+        width: 934px;
+        height: 100px;
+        margin: auto;
+        position: relative;
+        top: 114px;
+        .title {
+          font-size: 35px;
+          color: #572ee5;
+          text-align: center;
+          line-height: 50px;
+          position: relative;
+          left: 156px;
+          body.dark & {
+            color: #ffffff;
+            background: #37383c;
+          }
+          .gifo {
+            color: #50e3c2;
+          }
+        }
+      }
+    }
+    .search-section {
+      width: 100%;
+      body.dark & {
+        background: #37383c;
+      }
+      .search-conteiner {
+        width: 399px;
+        height: 190px;
+        margin: auto;
+        position: relative;
+        top: 127px;
+        .image-search {
+          width: 399px;
+          height: 190px;
+        }
+        #search-input {
+          width: 551px;
+          height: 50px;
+          position: relative;
+          left: -45px;
+          body.dark & {
+            border: 1px solid #ffffff;
+            background: #37383c;
+            color: #ffffff;
+          }
+        }
+        #search-icon {
+          width: 20px;
+          height: 20px;
+          margin-left: 44px;
+          body.dark & {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  
+    // TRENDING SECTION ///////////////////////////////////
+  
+    .trending-section {
+      width: 100%;
+      position: relative;
+      top: 238px;
+      body .dark & {
+        background: #37383c;
+      }
+      .trending-title {
+        font-size: 18px;
+        body .dark & {
+          color: #ffffff;
+        }
+      }
+      .paragraph-conteiner {
+        width: 402px;
+        height: 25px;
+      }
+      #paragraph-1 {
+        font-size: 16px;
+        body .dark & {
+          color: #ffffff;
+        }
+      }
+      .center-border {
+        width: 338px;
+      }
+    }
+  
+    // SECCION DE BUSQUEDA /////////////////////////////////////
+  
+    .gifos-section {
+      width: 100%;
+      height: 610px;
+      margin-top: 194px;
+      body.dark & {
+        background: #222326;
+      }
+      .gifos-conteiner {
+        width: 100%;
+        .gifos-title {
+          font-size: 25px;
+          text-align: center;
+          line-height: 30px;
+          body.dark & {
+            color: #ffffff;
+            background: #222326;
+          }
+        }
+      }
+      .paragraph-conteiner2 {
+        width: 371px;
+        height: 21px;
+        .paragraph2 {
+          font-size: 18px;
+          br {
+            display: none;
+          }
+        }
+      }
+      .gifos-section-conteiner {
+        width: 1114px;
+        height: 275px;
+        display: grid;
+        grid-column-gap: 21px;
+        grid-template-columns: repeat(24, 1fr);
+        margin: auto;
+        margin-top: 59px;
+        position: relative;
+        z-index: 1;
+        margin-left: 173px;
+        overflow-x: hidden;
+        div {
+          width: 357px;
+          height: 275px;
+          position: relative;
+          left: -1px;
+          width: 357px;
+          height: 275px;
+          opacity: 1;
+          & :hover {
+            background: rgba(87,46,229,0.50);
+          }
+          .img-gifos-section {
+            width: 357px;
+            height: 275px;
+            margin-left: 0px;
+          }
+          .div-tarjetas {
+            position: relative;
+            left: 0px;
+            top: -279px;
+            z-index: 2;
+            img {
+              position: relative;
+              margin-right: 10px;
+              z-index: 1000;
+              top: 10px;
+              height: 32px;
+              width: 32px;
+              cursor: pointer;
+            }
+          }
+        }
+        .title-gif-trending {
+          font-family: 'Roboto';
+          font-weight: bold;
+          font-size: 16px;
+          color: #FFFFFF;
+          position: relative;
+          top: 193px;
+          left: 22px;
+        }
+        .username-gif-trending {
+          font-family: 'Roboto';
+          font-weight: normal;
+          font-size: 15px;
+          color: #FFFFFF;
+          text-align: center;
+          position: relative;
+          top: 162px;
+          left: -111px;
+        }
+      }
+      .flechas {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        position: relative;
+        top: -151px;
+        .flecha-izquierda-conteiner {
+          width: 40px;
+          height: 40px;
+          position: relative;
+          left: -15%;
+          .flecha-izquierda {
+            cursor: pointer;
+          }
+          .hover-izq {
+            position: relative;
+            top: -42px;
+            display: none;
+          }
+        }
+        .flecha-derecha-conteiner {
+          width: 40px;
+          height: 40px;
+          position: relative;
+          left: 16.35%;
+          .flecha-derecha {
+            cursor: pointer;
+          }
+          .hover-der {
+            position: relative;
+            top: -42px;
+            display: none;
+          }
+        }
+      }
+      .div-tarjetas-muestra {
+        display: flex;
+        opacity: 1;
+      }
+    
+      .div-tarjetas-no-muestra {
+        display: none;
+      }
+    }
+    body.enabled-favoritos .gifos-section {
+      height: 640px;
+      margin-top: 0%;
+    }
+  
+    // CONTENEDOR DE SUGERENCIAS ///////////////////////////////////////
+  
+    .sugerencias-contenedor {
+      width: 551px;
+      height: 200px;
+      border-top: 1px solid #9cafc3;
+      margin-left: -74px;
+      .sugerencia-1 {
+        width: 192px;
+        height: 22px;
+        margin-bottom: 2.4%;
+      }
+      .sugerencia-2 {
+        margin-bottom: 2.4%;
+      }
+      .sugerencia-3 {
+        margin-bottom: 2.4%;
+      }
+      .sugerencia-4 {
+        margin-bottom: 2.4%;
+      }
+      body.dark & {
+        border: 1px solid #ffffff;
+      }
+    }
+  
+    // FOOTER///////////////////////////////////////////////////////////
+  
+    footer {
+      width: 100%;
+      height: 116px;
+      .redes-section {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        .title3-conteiner {
+          width: 79px;
+          height: 15px;
+          #title3 {
+            font-size: 13px;
+            color: #000000;
+            letter-spacing: 0;
+          }
+        }
+        .redes {
+          position: relative;
+          left: -318px;
+          a {
+            transition: 0.5s;
+            // transform: scale(2);
+          }
+          a i {
+            position: relative;
+            top: -25px;
+            &:hover {
+              cursor: pointer;
+              animation-duration: 0.5s;
+              transform: scale(2);
+              color: #572ee5;
+            }
+          }
+        }
+        .copyright-conteiner {
+          #copyright {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+    // SECCION DE GIFOS POR LA BUSQUEDA///////////////////////////////////////////
+  
+    .gifs-busqueda-section {
+      width: 81%;
+      display: grid;
+      grid-row-gap: 31px;
+      grid-column-gap: 29px;
+      grid-template-columns: repeat(4, 0fr);
+      grid-template-rows: repeat(3, 1fr);
+      position: relative;
+      left: 9%;
+      top: 268px;
+      body .dark {
+        background: none;
+      }
+      .gifs-12-conteiner {
+        width: 260px;
+        height: 200px;
+        display: grid;
+        grid-row-gap: 311px;
+        grid-column-gap: 29px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        box-sizing: border-box;
+        margin-left: 10px;
+        &:hover {
+          background: #572ee5;
+          opacity: 0.7;
+          box-shadow: 0 0 5 #572ee5;
+        }
+        .gifs12 {
+          width: 260px;
+          height: 200px;
+          &:hover {
+            background: #572ee5;
+            opacity: 0.7;
+            box-shadow: 0 0 5 #572ee5;
+          }
+        }
+      }
+    }
+  
+    .busqueda {
+      body.dark & {
+        background: #37383c;
+      }
+    }
+  
+    // TITULO DE LA BUSQUEDA INTRODUCIDA EN EL INPUT//////////////////////////////
+    .title-busqueda-conteiner {
+      width: 550px;
+      height: 30px;
+      position: relative;
+      top: 210px;
+      margin: auto;
+      .title-busqueda {
+        font-size: 35px;
+        position: relative;
+        z-index: 2;
+      }
+    }
+    .busqueda {
+      margin-top: 10px;
+    }
+  
+    .conteiner-btn-ver-mas-busqueda {
+      position: relative;
+      top: 329px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 3.2;
+      font-family: "Montserrat";
+      &:hover {
+        background: #572ee5;
+        color: white;
+      }
+      .btn-ver-mas-busqueda {
+        position: relative;
+        z-index: 1;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  
+    .div-tarjetas {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: end;
+      width: 260px;
+      height: 42px;
+      padding-top: 10px;
+      position: relative;
+      left: -289px;
+      img {
+        position: relative;
+        margin-right: 10px;
+        z-index: 1000;
+        opacity: 1;
+      }
+    }
+  
+    .div-tarjetas-muestra {
+      display: flex;
+    }
+  
+    .div-tarjetas-no-muestra {
+      display: none;
+    }
+  
+    // CAMBIO DE ICONO DENTRO DE LAS TARJETAS EN DESKTOP (ESTILOS)//////////////////////////////////////////////
+  
+    .corazon-tajeta-hover {
+      position: relative;
+      right: 5px;
+      display: none;
+    }
+  
+    // ESTILOS PARA DESKTOP DE LA SECCION DE GIFOS MAX/////////////////////////////////////////////////////////
+  
+    #section-gifos-max {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.9);
+      .conteiner-gifos-max {
+        position: relative;
+        top: 3px;
+        .conteiner-cruz-cerrar {
+          width: 23.7px;
+          height: 24px;
+          position: relative;
+          left: 72%;
+          top: 133px;
+          cursor: pointer;
+          #cruz-cerrar {
+            width: 15.2px;
+            height: 15.2px;
+            color: #572ee5;
+          }
+        }
+        .img-conteiner {
+          width: 84.8%;
+          height: 42%;
+          margin: auto;
+          #imagen {
+            width: 695px;
+            height: 385px;
+            margin-left: 21%;
+            margin-top: 230px;
+          }
+        }
+        .fav-desc-conteiner {
+          display: flex;
+          flex-flow: row-reverse nowrap;
+          justify-content: space-between;
+          position: relative;
+          left: 66%;
+          top: -73px;
+          width: 100px;
+          .descarga-conteiner {
+            width: 36px;
+            height: 36px;
+            opacity: 1;
+            border: 1px solid #9cafc3;
+            border-radius: 6px;
+            cursor: pointer;
+            #descarga-icon {
+              width: 36px;
+              height: 36px;
+              color: #572ee5;
+              line-height: 37px;
+              margin-left: 10px;
+            }
+          }
+          .fav-desc-conteiner {
+            width: 36px;
+            height: 36px;
+            border: 1px solid #572ee5;
+            border-radius: 6px;
+            cursor: pointer;
+            #favorito-vacio {
+              color: rgb(87, 46, 229);
+              width: 36px;
+              height: 36px;
+              line-height: 38px;
+              margin-left: 9px;
+            }
+          }
+        }
+        .label-conteiner {
+          width: 164px;
+          height: 100px;
+          margin-left: 26%;
+        }
+      }
+    }
+  
+  // SECCION DE FAVORITOS//////////////////////////////////////////////////////////////////////////////
+  
+  #favoritos {
+    width: 100%;
+    height: auto;
+    margin-top: 66px;
+    flex-flow: row wrap;  
+    justify-content: center;
+    body.dark & {
+      background: #37383c;
+      position: relative;
+    }
+    .gifs-12-conteiner {
+      width: 80.27%;
+      height: auto;
+      display: grid;
+      grid-row-gap: 31px;
+      grid-column-gap: 29px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      box-sizing: border-box;
+      .gifs12 {
+        width: 260px;
+        height: 200px;
+        &:hover {
+          background: #572EE5;
+          opacity: 0.5;
+        }
+      }
+      .div-tarjetas {
+        width: 260px;
+        height: 42px;
+        padding-top: 10px;
+        position: relative;
+        left: 0px;
+        margin-bottom: -52px;
+        top: -206px;
+                
+      }
+    }
+    .div-btn-ver-mas {
+      position: relative;
+      top: 81vh;
+    }
+    
+  }
+  
+  ///////////////FAVORITOS////////////////////////////////////////////////////////////////////
+  
+  .conteiner-title-favoritos {
+    width: 100%;
+    height: 64px;
+    .favoritos-icon {
+      width: 28px;
+      height: 21px;
+      position: relative;
+      left: 49%;
+      margin-bottom: 10px;
+    }
+    .title-favoritos {
+      font-family: 'Montserrat';
+      font-weight: bold;
+      font-size: 25px;
+      color: #572EE5;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+  
+  // ICONO Y TEXTO DE SECCION DE FAVORITOS VACIO ///////////////////////////////////////////////////////////////
+  
+  .div-texto-fav-vacio {
+    width: 431px;
+    height: 66px;
+    margin: auto;
+    position: relative;
+    top: 110px;
+    .texto-fav-vacio {
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 22px;
+      color: #50e3c2;
+      text-align: center;
+      line-height: 33px;
+    }
+  }
+  
+  .div-img-fav-vacio {
+    width: 10.4%;
+    height: 10.7%;
+    margin: auto;
+    position: relative;
+    top: 90px;
+    .img-fav-vacio {
+      width: 150px;
+      height: 151px;
+    }
+  }
+  
+  .conteiner-btn-ver-mas-favoritos {
+    width: 127px;
+    height: 50px;
+    border: 1px solid #572ee5;
+    border-radius: 25px;
+    margin: 0 40%;
+    // position: relative;
+    // top: 83%;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 13px;
+    color: #572ee5;
+    text-align: center;
+    line-height: 4.2;
+    display: none;
+    cursor: pointer;
+    margin-top: 46px;
+    &:hover {
+      background: #572ee5;
+      color: white;
+      body.dark & {
+        border: 1px solid #ffffff;
+        color: #37383c;
+        background: #ffffff;
+      }
+    }
+    body.dark & {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      // background: #ffffff;
+    }
+    
+  }
+  
+  
+  // MIS GIFOS SECTION DESKTOP///////////////////////////////////////////////////////
+  
+  .mis-gifos-section {
+    margin: auto;
+    width: 1139px;
+    .mis-gifos-icon {
+      width: 24px;
+      height: 22px;
+      position: relative;
+      left: 556px;
+      margin-top: 90px;
+    }
+    .conteiner-title-mis-gifos {
+      width: 100%;
+      height: 30px;
+    }
+    .title-mis-gifos {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 20px;
+      color: #572ee5;
+      text-align: center;
+      line-height: 30px;
+      body.dark & {
+        color: #ffffff;
+      }
+    }
+    .conteiner-mis-gifos {
+      width: 1139px;
+      height: 200px;
+      display: grid;
+      grid-row-gap: 31px;
+      grid-column-gap: 29px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      box-sizing: border-box;
+      position: relative;
+      left: 0px;
+      top: 9px;
+      margin-top: 52px;
+      body.dark & {
+        background: #37383c;
+      }
+      .div-container {
+        width: 260px;
+        height: 200px;
+        &:hover {
+          background: #572ee5;
+          box-shadow: 0 0 5px #572ee5;
+          opacity: 0.6;
+        }
+        .mis-gifos {
+          width: 260px;
+          height: 200px;
+          &:hover {
+            background: #572ee5;
+            box-shadow: 0 0 5px #572ee5;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .btn-ver-mas-mis-gifos {
+      width: 127px;
+      height: 50px;
+      border: 1px solid #572ee5;
+      border-radius: 25px;
+      margin: auto;
+      color: #572ee5;
+      margin-top: 385px;
+      z-index: 1;
+      font-family: "Montserrat";
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background: #572ee5;
+        color: #ffffff;
+      }
+      body.dark & {
+        border: 1px solid #ffffff;
+        color: #37383c;
+      }
+    }
+  }
+  
+  .disabled-mis-gifos {
+    display: none;
+  }
+  
+    .div-container {
+      width: 260px;
+      height: 200px;
+      &:hover {
+        background: #572ee5;
+        box-shadow: 0 0 5px #572ee5;
+        opacity: 0.6;
+      }
+      .mis-gifos {
+        width: 260px;
+        height: 200px;
+        &:hover {
+          background: #572ee5;
+          box-shadow: 0 0 5px #572ee5;
+          opacity: 0.6;
+        }
+      }
+  
+      .icono-download {
+        position: relative;
+        bottom: 202px;
+        left: 154px;
+        width: 32px;
+        height: 32px;
+        z-index: 9999999;
+      }
+  
+      .fa-trash {
+        position: relative;
+        bottom: 220px;
+        left: 147px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.7;
+        background: #ffffff;
+        border-radius: 6px;
+        color: #572ee5;
+        &:before {
+          position: relative;
+          top: 9px;
+          left: 8px;
+        }
+      }
+  
+      .full-size {
+        position: relative;
+        bottom: 202px;
+        left: 161px;
+        width: 32px;
+        height: 32px;
+        z-index: 9999999;
+      }
+      .title {
+        position: relative;
+        bottom: 118px;
+        left: 17px;
+        width: 234px;
+        height: 40px;
+        z-index: 9999999;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 16px;
+        color: #ffffff;
+        text-transform: capitalize;
+      }
+      .user {
+        position: relative;
+        bottom: 160px;
+        bottom: 118px;
+        left: 17px;
+        height: 40px;
+        z-index: 9999999;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 16px;
+        color: #ffffff;
+        text-transform: capitalize;
+      }
+    }
+  
+  
+    .div-texto-misGifos-vacio {
+      width: 431px;
+      height: 66px;
+      margin: auto;
+      position: relative;
+      top: 110px;
+      .texto-misGifos-vacio {
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 22px;
+        color: #50e3c2;
+        text-align: center;
+        line-height: 33px;
+      }
+    }
+    
+    .div-img-misGifos-vacio {
+      width: 13.4%;
+      height: 10.7%;
+      margin: auto;
+      position: relative;
+      top: 90px;
+      margin-top: -547px;
+      .img-fav-vacio {
+        width: 150px;
+        height: 151px;
+      }
+    }
+  }
+  

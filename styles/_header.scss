@@ -1,0 +1,100 @@
+header {
+    width: 100%;
+    height: 103px;
+    body.dark & {
+      background: #37383c;
+    }
+    .border-violet {
+      width: 100%;
+      height: 5px;
+      background-color: #572ee5;
+      display: block;
+      body.dark & {
+        background: #37383c;
+      }
+      body.enabled-favoritos & {
+        display: none;
+      }
+    }
+    .logo {
+      width: 48.8px;
+      height: 48.8px;
+      position: relative;
+      top: 26px;
+      left: 5.9%;
+      cursor: pointer;
+    }
+    #btn-menu {
+      width: 15px;
+      height: 14px;
+      color: #572ee5;
+      float: right;
+      margin-top: 44px;
+      margin-right: 26px;
+      cursor: pointer;
+      display: block;
+      body.dark & {
+        color: #ffffff;
+      }
+    }
+  
+    #btn-close {
+      width: 15px;
+      height: 14px;
+      color: #572ee5;
+      float: right;
+      margin-top: 44px;
+      margin-right: -16px;
+      cursor: pointer;
+      display: none;
+    }
+    .opc-menu {
+      width: 100%;
+      height: 484px;
+      text-align: center;
+      body.dark & {
+        background: #000000;
+      }
+      ul {
+        list-style: none;
+        li {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 30px;
+          display: block;
+          cursor: pointer;
+          margin: 13px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          body.dark & {
+            color: #ffffff;
+          }
+        }
+        .white-line,
+        .white-line2 {
+          width: 41px;
+          margin: auto;
+          border: #ffffff 1px solid;
+          opacity: 0.5;
+          cursor: unset;
+        }
+      }
+    }
+  }
+  .enabled-menu {
+    display: block;
+    background: rgba(87, 46, 229, 0.9);
+    margin-top: 45px;
+    padding-top: 7px;
+    position: sticky;
+    z-index: 1;
+  }
+  
+  .disabled-menu {
+    display: none;
+  }
